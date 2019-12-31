@@ -1,13 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8"/>
+
+<head>
+    <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
-    <title>PaintJS!</title>
-    <link rel="stylesheet" href="./style.css"/>
-  </head>
-  <body>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>PaintJS - Draw your imagination</title>
+    <link rel="stylesheet" href="./style.css" />
+</head>
+
+<body>
+    <canvas id="jsCanvas" class="canvas"></canvas>
+    <div class="controls">
+        <div class="controls_range">
+            <input type="range" id="jsRange" min="0.1" max="30.0" value="15.0" step="0.5" oninput="changeLineWidth(this.value)">
+        </div>
+        <div class="controls_erasers_btns">
+            <div class="controls_erasers">
+                <button id="jsEraser" onclick="toggleEraser()">Eraser</button>
+                <div class="controls_eraser" id="e_xs"></div>
+                <div class="controls_eraser" id="e_s"></div>
+                <div class="controls_eraser" id="e_m"></div>
+                <div class="controls_eraser" id="e_l"></div>
+                <div class="controls_eraser" id="e_xl"></div>
+            </div>
+            <div class="controls_btns">
+                <button id="jsFill" onclick="fillWithColor()">Fill</button>
+                <button id="jsClear" onclick="clearCanvas()">Clear</button>
+            </div>
+        </div>
+        <div class="controls_colors" id="jsColors">
+            <div class="controls_color" style="background-color: #2c2c2c"></div>
+            <div class="controls_color" style="background-color: #fff"></div>
+            <div class="controls_color" style="background-color: rgb(255,59,48)"></div>
+            <div class="controls_color" style="background-color: rgb(255,149,0)"></div>
+            <div class="controls_color" style="background-color: rgb(255,204,0)"></div>
+            <div class="controls_color" style="background-color: rgb(76,217,100)"></div>
+            <div class="controls_color" style="background-color: rgb(90,200,250)"></div>
+            <div class="controls_color" style="background-color: rgb(0,122,255)"></div>
+            <div class="controls_color" style="background-color: rgb(88,86,214)"></div>
+        </div>
+    </div>
     <script src="./app.js"></script>
-  </body>
+</body>
+
 </html>

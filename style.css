@@ -1,0 +1,135 @@
+@import './reset.css';
+
+body {
+  background-color: #f6f9fc;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px 0;
+}
+
+.canvas {
+  width: 800px;
+  height: 500px;
+  background: #fff;
+  border-radius: 15px;
+  box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+
+.controls {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.controls_erasers_btns {
+  display: flex;
+  align-items: center;
+  height: 94px;
+}
+
+.controls .controls_erasers {
+  margin-bottom: 30px;
+  display: flex;
+  align-items: center;
+}
+
+.controls .controls_erasers button {
+  all: unset;
+  cursor: pointer;
+  background-color: #fff;
+  padding: 5px 0px;
+  width: 80px;
+  text-align: center;
+  border-radius: 5px;
+  box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
+  border: 2px solid rgba(0, 0, 0, 0.18);
+  color: rgba(0, 0, 0, 0.8);
+  margin-right: 15px;
+}
+
+.controls .controls_erasers button:active {
+  transform: scale(0.97);
+}
+
+.controls .controls_eraser {
+  border-radius: 50%;
+  background-color: #000;
+  box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
+  border: 2px solid rgba(0, 0, 0, 0.18);
+  cursor: not-allowed;
+  margin-right: 15px;
+}
+
+.controls .controls_erasers #e_xs {
+  width: 15px;
+  height: 15px;
+}
+
+.controls .controls_erasers #e_s {
+  width: 20px;
+  height: 20px;
+}
+
+.controls .controls_erasers #e_m {
+  width: 30px;
+  height: 30px;
+}
+
+.controls .controls_erasers #e_l {
+  width: 40px;
+  height: 40px;
+}
+
+.controls .controls_erasers #e_xl {
+  width: 50px;
+  height: 50px;
+  margin-right: 50px;
+}
+
+.controls .controls_btns {
+  margin-bottom: 30px;
+}
+
+.controls .controls_btns button {
+  all: unset;
+  cursor: pointer;
+  background-color: #fff;
+  padding: 5px 0px;
+  width: 80px;
+  text-align: center;
+  border-radius: 5px;
+  box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
+  border: 2px solid rgba(0, 0, 0, 0.18);
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.controls .controls_range {
+  margin-bottom: 30px;
+}
+
+.controls .controls_btns button:active {
+  transform: scale(0.97);
+}
+
+.controls .controls_colors {
+  display: flex;
+  align-items: center;
+  height: 64px;
+}
+
+.controls_colors .controls_color {
+  width: 50px;
+  height: 50px;
+  box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
+  border-radius: 50%;
+  margin-right: 10px;
+  cursor: pointer;
+  border: none;
+}
+
+.controls_colors .controls_color:last-of-type {
+  margin-right: 0;
+}
